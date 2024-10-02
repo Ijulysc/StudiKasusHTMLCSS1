@@ -1,0 +1,291 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background Color */
+    display: flex;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #333333 0%, #4CAF50 100%); /* Gradient Background */
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #4CAF50; /* Green Bottom Border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
+    border-radius: 0 0 10px 10px; /* Rounded Bottom Corners */
+}
+
+.navbar a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    border-radius: 5px; /* Rounded Corners for Links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth Transition */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Medium Gray */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add some padding to body to prevent content from hiding behind navbar */
+body {
+    padding-top: 60px; /* Height of navbar + some spacing */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333333; /* Dark Gray */
+    color: #ffffff; /* White */
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.sidebar a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #575757; /* Medium Gray */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* White */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Adjusted for spacing */
+}
+
+/* Product styling */
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa; /* Light Gray */
+}
+
+.product img {
+    width: 100%; /* Adjusted for responsive design */
+    height: auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    margin: 0 0 5px 0;
+    color: #333333; /* Dark Gray */
+}
+
+.product-info p {
+    margin: 0;
+    color: #777777; /* Light Gray */
+}
+
+/* Button styling */
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green */
+    color: #ffffff; /* White */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+/* Profile page styling */
+.profile-container {
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing for better layout */
+    color: #333333; /* Dark Gray */
+}
+
+/* Contact form styling */
+.contact-form {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+    color: #333333; /* Dark Gray */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+/* Home Header */
+.home-header {
+    background-color: #4CAF50; /* Green Background */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Rounded Bottom Corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle Shadow */
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.home-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Featured Products */
+.featured-products {
+    margin: 20px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 0 auto 15px;
+    background-color: #fff;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+}
+
+.product-info p {
+    margin: 0 0 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-us h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
